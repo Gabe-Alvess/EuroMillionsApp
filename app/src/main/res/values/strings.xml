@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EuroMillionsApp</string>
+    <string name="logo">euro millions logo</string>
+    <string name="info">Draw numbers to bet on \n <b>Euro Millions</b></string>
+    <string name="first_hint">How much numbers? (5 – 30)</string>
+    <string name="second_hint">How much stars? (2 – 12)</string>
+    <string name="draw_btn">draw numbers</string>
 </resources>

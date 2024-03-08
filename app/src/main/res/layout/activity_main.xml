@@ -5,15 +5,84 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/blue"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/euro_millions_logo" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txt_info"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/info"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/img_logo"
+        app:layout_constraintVertical_bias="0.10" />
 
+    <EditText
+        android:id="@+id/edit_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:inputType="number"
+        android:maxLength="2"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:textColorHint="#65000000"
+        android:hint="@string/first_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_info" />
+
+    <EditText
+        android:id="@+id/edit_star"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:hint="@string/second_hint"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:textColorHint="#65000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_number" />
+
+    <Button
+        android:id="@+id/draw_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/draw_btn"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_star" />
 </androidx.constraintlayout.widget.ConstraintLayout>
