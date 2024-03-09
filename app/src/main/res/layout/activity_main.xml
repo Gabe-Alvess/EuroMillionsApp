@@ -6,12 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
+
     tools:context=".MainActivity" >
 
     <ImageView
         android:id="@+id/img_logo"
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="100dp"
         android:background="@color/white"
         android:contentDescription="@string/logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,17 +26,16 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:text="@string/info"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_logo"
-        app:layout_constraintVertical_bias="0.10" />
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
 
     <EditText
         android:id="@+id/edit_number"
@@ -46,9 +46,9 @@
         android:maxLength="2"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/white"
-        android:padding="16dp"
+        android:padding="12dp"
         android:textAlignment="center"
-        android:textColor="@color/gold"
+        android:textColor="@color/blue"
         android:textColorHint="#65000000"
         android:hint="@string/first_hint"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,7 @@
         android:hint="@string/second_hint"
         android:inputType="number"
         android:maxLength="2"
-        android:padding="16dp"
+        android:padding="12dp"
         android:textAlignment="center"
         android:textColor="@color/gold"
         android:textColorHint="#65000000"
@@ -85,4 +85,71 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_star" />
+
+    <TextView
+        android:id="@+id/txt_lucky_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/num_msg"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/draw_btn" />
+
+    <TextView
+        android:id="@+id/txt_num_res"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:padding="12dp"
+        tools:text="Numbers"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_lucky_num" />
+
+    <TextView
+        android:id="@+id/txt_lucky_stars"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/star_msg"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_num_res" />
+
+    <TextView
+        android:id="@+id/txt_star_res"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:padding="12dp"
+        tools:text="Stars"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_lucky_stars" />
 </androidx.constraintlayout.widget.ConstraintLayout>

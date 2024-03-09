@@ -5,4 +5,6 @@
     <string name="first_hint">How much numbers? (5 – 30)</string>
     <string name="second_hint">How much stars? (2 – 12)</string>
     <string name="draw_btn">draw numbers</string>
+    <string name="num_msg">The lucky numbers are:</string>
+    <string name="star_msg">The lucky stars are:</string>
 </resources>
