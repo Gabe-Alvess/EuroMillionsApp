@@ -104,7 +104,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         numResult.text = luckyNumbers.joinToString(" | ")
-        starResult.text = luckyStars.joinToString(" ⭐ ")
+        starResult.text = luckyStars.joinToString(" * ")
 
         lastResult.edit().apply {
             putString("numResult", numResult.text.toString())
